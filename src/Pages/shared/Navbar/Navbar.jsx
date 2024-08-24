@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import userPhoto from '../../../assets/user.png'
 
 const Navbar = () => {
@@ -47,7 +47,7 @@ const Navbar = () => {
                         alt="Tailwind CSS Navbar component"
                         src={userPhoto} />
                 </div>
-                <a className="btn btn-sm btn-neutral ml-2 px-5">Login</a>
+                <Link className="btn btn-sm btn-neutral ml-2 px-5" to='/login'>Login</Link>
             </div>
         </div>
     );
